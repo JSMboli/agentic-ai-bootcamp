@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Agentic AI Bootcamp student portal with downloads, schedule, setup guidance and practical resources." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Agentic AI Bootcamp | Student Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+  <div class="noise"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Agentic AI Bootcamp home">
+        <span class="brand-mark">AI</span>
+        <span class="brand-text">
+          <strong>Agentic AI Bootcamp</strong>
+          <small>Student Download Portal</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#programme">Programme</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#setup">Setup</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#downloads">Get Resources</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          Live resource portal for August 2026 bootcamp
+        </div>
+        <h1>
+          One week of <span class="gradient-text">Agentic AI</span>,
+          LangGraph, Groq, Ollama and Human-in-the-Loop practice.
+        </h1>
+        <p class="hero-text">
+          Welcome to the official student portal for the Agentic AI Bootcamp. This site brings together your bootcamp pack,
+          setup guidance, notebooks, troubleshooting notes, programme outline and practical resources in one clear place.
+        </p>
+
+        <div class="hero-badges">
+          <span>Hybrid theory + practical</span>
+          <span>Financially inclusive pathways</span>
+          <span>Works with Groq, Ollama and offline fallback</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#downloads">Download resources</a>
+          <a class="btn btn-secondary" href="#programme">View programme</a>
+        </div>
+
+        <div class="meta-row">
+          <div>
+            <strong>Dates</strong>
+            <span>18/08/2026 – 26/08/2026</span>
+          </div>
+          <div>
+            <strong>Industrial visit</strong>
+            <span>Amazon fulfilment centre, UK</span>
+          </div>
+          <div>
+            <strong>Focus</strong>
+            <span>Agentic workflows for adult learners</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal delay-1">
+        <div class="glass-panel">
+          <div class="panel-top">
+            <span class="pill accent">Bootcamp stack</span>
+            <span class="tiny-pill">2026 Cohort</span>
+          </div>
+
+          <div class="system-map">
+            <div class="centre-node">AI</div>
+            <div class="orbit orbit-1">LangGraph</div>
+            <div class="orbit orbit-2">Groq</div>
+            <div class="orbit orbit-3">Ollama</div>
+            <div class="orbit orbit-4">HITL</div>
+            <div class="orbit orbit-5">Tools</div>
+            <div class="orbit orbit-6">RAG</div>
+          </div>
+
+          <div class="mini-stats">
+            <div class="mini-card">
+              <strong data-counter="5">0</strong>
+              <span>Core days</span>
+            </div>
+            <div class="mini-card">
+              <strong data-counter="6">0</strong>
+              <span>Guided notebooks</span>
+            </div>
+            <div class="mini-card">
+              <strong data-counter="3">0</strong>
+              <span>Provider routes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading reveal">
+        <span class="section-tag">About the portal</span>
+        <h2>Everything students need before, during and after the bootcamp</h2>
+        <p>
+          This website is designed as a single public-facing landing page that you can host on your personal GitHub Pages site.
+          It can provide orientation, logistics, curriculum highlights and direct download access to the latest bootcamp materials.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="icon-wrap">📘</div>
+          <h3>Structured learning resources</h3>
+          <p>Includes notebooks, provider setup guidance, troubleshooting documentation, programme outline and curated further reading.</p>
+        </article>
+        <article class="feature-card reveal delay-1">
+          <div class="icon-wrap">🧠</div>
+          <h3>Modern agentic AI workflow focus</h3>
+          <p>Built around LangGraph, tool use, retrieval, orchestration, Human-in-the-Loop approval patterns and realistic adult-learning examples.</p>
+        </article>
+        <article class="feature-card reveal delay-2">
+          <div class="icon-wrap">⚙️</div>
+          <h3>Inclusive setup options</h3>
+          <p>Students can work with Groq, local Ollama models, or a safe offline fallback path when premium API access is not available.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="highlights">
+      <div class="section-heading reveal">
+        <span class="section-tag">Bootcamp highlights</span>
+        <h2>What makes this experience different</h2>
+      </div>
+
+      <div class="highlight-layout">
+        <div class="highlight-list reveal">
+          <div class="highlight-item">
+            <span class="highlight-number">01</span>
+            <div>
+              <h3>Realistic examples</h3>
+              <p>Practical tasks are framed around professional scenarios, including operational use cases relevant to an Amazon fulfilment centre visit.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">02</span>
+            <div>
+              <h3>Explainable notebooks</h3>
+              <p>Expanded Markdown, progress indicators, model reporting and diagnostic outputs help students understand what is happening at each step.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-number">03</span>
+            <div>
+              <h3>Deployment-ready mindset</h3>
+              <p>Students are introduced to robust patterns for provider routing, tool integration, checkpointing and human approval flows.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="spotlight-card reveal delay-1">
+          <span class="spotlight-badge">Included</span>
+          <h3>Suggested student journey</h3>
+          <ul>
+            <li>Read the setup guide and create accounts</li>
+            <li>Run Day 0 provider diagnostics</li>
+            <li>Work through guided bootcamp notebooks</li>
+            <li>Experiment with Groq, Ollama and HITL patterns</li>
+            <li>Use the troubleshooting guide if anything fails</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section container" id="programme">
+      <div class="section-heading reveal">
+        <span class="section-tag">Programme outline</span>
+        <h2>Indicative bootcamp flow</h2>
+        <p>The structure below can be adapted, but it provides a polished public summary for your GitHub Pages website.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-day">Day 1 · 18 Aug 2026</span>
+            <h3>Foundations of Agentic AI</h3>
+            <p>Introductions to LLMs, agents, workflows, prompts, tools, providers and the role of Human-in-the-Loop supervision.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-day">Day 2 · 19 Aug 2026</span>
+            <h3>LangGraph and multi-step orchestration</h3>
+            <p>Students build structured graphs, connect tools and explore controlled versus model-driven workflows.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-day">Day 3 · 20 Aug 2026</span>
+            <h3>Industrial visit</h3>
+            <p>Visit to an Amazon fulfilment centre in the UK, with guided reflection on operational AI, automation, safety and optimisation use cases.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-day">Day 4 · 21 Aug 2026</span>
+            <h3>Tool use, RAG and grounded outputs</h3>
+            <p>Practical exercises on retrieval, context management, external tools and verifiable workflow outputs.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-day">Day 5 · 24–26 Aug 2026</span>
+            <h3>Human approval, capstone patterns and reflection</h3>
+            <p>Students implement review checkpoints, compare providers, present practical outcomes and discuss responsible deployment.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="downloads">
+      <div class="section-heading reveal">
+        <span class="section-tag">Downloads</span>
+        <h2>Make the latest resources available in one click</h2>
+        <p>
+          Replace the placeholder links below with your GitHub release URLs, repository file links, or direct download paths.
+        </p>
+      </div>
+
+      <div class="downloads-grid">
+        <article class="download-card reveal">
+          <div class="download-top">
+            <span class="download-icon">⬇</span>
+            <span class="download-type">ZIP package</span>
+          </div>
+          <h3>Complete bootcamp pack</h3>
+          <p>The main student distribution including notebooks, guides, programme outline and supporting files.</p>
+          <a class="btn btn-primary btn-block" href="#" data-demo-link>Replace with ZIP link</a>
+        </article>
+
+        <article class="download-card reveal delay-1">
+          <div class="download-top">
+            <span class="download-icon">🛠</span>
+            <span class="download-type">Setup guide</span>
+          </div>
+          <h3>Provider account setup</h3>
+          <p>Clear instructions for creating provider accounts, obtaining API keys and configuring local or cloud access.</p>
+          <a class="btn btn-secondary btn-block" href="#" data-demo-link>Replace with guide link</a>
+        </article>
+
+        <article class="download-card reveal delay-2">
+          <div class="download-top">
+            <span class="download-icon">🧪</span>
+            <span class="download-type">Notebook</span>
+          </div>
+          <h3>Day 0 diagnostics notebook</h3>
+          <p>The recommended first run to verify Groq, Ollama, fallback routing and the local environment.</p>
+          <a class="btn btn-secondary btn-block" href="#" data-demo-link>Replace with notebook link</a>
+        </article>
+
+        <article class="download-card reveal">
+          <div class="download-top">
+            <span class="download-icon">🧭</span>
+            <span class="download-type">Support</span>
+          </div>
+          <h3>Troubleshooting guide</h3>
+          <p>Useful when provider checks, notebooks or environment setup do not behave as expected.</p>
+          <a class="btn btn-secondary btn-block" href="#" data-demo-link>Replace with troubleshooting link</a>
+        </article>
+      </div>
+
+      <div class="notice-card reveal delay-1">
+        <strong>Tip:</strong> If you publish the resources using a GitHub release, place the latest ZIP in the release assets and link it here. You can also link directly to notebooks or Markdown guides in the repository.
+      </div>
+    </section>
+
+    <section class="section container" id="setup">
+      <div class="section-heading reveal">
+        <span class="section-tag">Quick setup</span>
+        <h2>What students should do first</h2>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card reveal">
+          <span class="step-number">1</span>
+          <h3>Download the pack</h3>
+          <p>Download the latest ZIP and extract it locally before opening the notebooks.</p>
+        </article>
+        <article class="step-card reveal delay-1">
+          <span class="step-number">2</span>
+          <h3>Create provider accounts</h3>
+          <p>Create a Groq account for fast hosted inference, or prepare local models in Ollama if preferred.</p>
+        </article>
+        <article class="step-card reveal delay-2">
+          <span class="step-number">3</span>
+          <h3>Install dependencies</h3>
+          <p>Use the requirements file or a clean virtual environment before launching Jupyter Notebook or JupyterLab.</p>
+        </article>
+        <article class="step-card reveal">
+          <span class="step-number">4</span>
+          <h3>Run Day 0 first</h3>
+          <p>Day 0 validates the environment, shows provider status, selected model, timings and troubleshooting guidance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="faq">
+      <div class="section-heading reveal">
+        <span class="section-tag">FAQ</span>
+        <h2>Common student questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Do I need a paid API key to take part?</summary>
+          <p>No. The resources are designed to be financially inclusive. Students can use Groq, local Ollama models, or an offline fallback path where appropriate.</p>
+        </details>
+        <details class="faq-item reveal delay-1">
+          <summary>Which notebook should I open first?</summary>
+          <p>Start with the Day 0 setup and provider diagnostics notebook. It is designed to confirm that your environment is working correctly before progressing further.</p>
+        </details>
+        <details class="faq-item reveal delay-2">
+          <summary>Why are progress indicators shown in the notebooks?</summary>
+          <p>Some models and workflows take time to run. The revised notebooks include progress feedback, timing details and model metadata so you always know what is happening.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary>What should I pay attention to during the Amazon visit?</summary>
+          <p>Observe automation, decision support, safety, process optimisation, human supervision, coordination and operational workflows that could benefit from agentic AI.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="cta-panel reveal">
+        <div>
+          <span class="section-tag">Ready to publish?</span>
+          <h2>Launch this on GitHub Pages and keep the content updated with each new release.</h2>
+          <p>Simply replace the placeholder download links and edit the text to match your final delivery details.</p>
+        </div>
+        <a class="btn btn-primary" href="#downloads">Update download links</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark">AI</span>
+          <span class="brand-text">
+            <strong>Agentic AI Bootcamp</strong>
+            <small>Student Portal</small>
+          </span>
+        </a>
+        <p class="footer-copy">A modern public-facing GitHub Pages website for sharing bootcamp information and downloadable student resources.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#programme">Programme</a>
+        <a href="#downloads">Downloads</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div class="footer-meta">
+        <span>Prepared for students</span>
+        <span>© <span id="currentYear"></span> Julius Mboli</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
